@@ -1,0 +1,957 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Nav bar*/
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 6.5rem;
+  background-color: #222;
+  z-index: 999;
+  position: fixed;
+}
+
+.nav h2 {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+#item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav #item li {
+  list-style: none;
+  padding-right: 50px;
+}
+
+.nav #item li a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.nav #item li a:hover,
+.nav #item .icon i:hover,
+.mid .btn a.simple:hover {
+  color: #ff5733;
+  cursor: pointer;
+}
+
+.nav #item .icon i {
+  color: #fff;
+  padding-right: 30px;
+  font-weight: bolder;
+}
+
+#bar {
+  color: #ff5733;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  display: none;
+}
+
+/* first Section*/
+.back {
+  background-image: url(images/bg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  z-index: -1;
+}
+
+.back .overlay {
+  background-color: #171819;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+}
+
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mid p {
+  color: #7f8c8d;
+  font-size: 1.3rem;
+  margin-bottom: 1.4rem;
+}
+
+.mid h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.mid .btn {
+  margin-top: 2rem;
+}
+
+.mid .btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mid .btn a.simple {
+  color: #fff;
+  font-weight: 500;
+  padding: 0.9rem 1.6rem;
+}
+
+.mid .btn a.border {
+  color: #ff5733;
+  border: 1px solid #ff5733;
+  font-weight: 500;
+  padding: 0.9rem 1.6rem;
+  border-radius: 3px;
+}
+
+.mid .btn a.border:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+/*Section 2*/
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 15rem;
+  background-color: #171819;
+}
+
+.details h3,
+details h6,
+details h5 {
+  color: #fff;
+}
+.details .one {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.details .one h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1.1rem;
+}
+
+.details .one h6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+}
+
+.details .one p {
+  color: #666262;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+}
+
+.details .one a {
+  color: #fff;
+  background-color: #f13a11;
+  padding: 1rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.details .one a:hover {
+  background-color: #fff;
+  color: #f13a11;
+  cursor: pointer;
+}
+
+.details .two {
+  width: 45%;
+  border-left: 1px solid #666262;
+  padding-left: 4rem;
+}
+
+.details .two h3 {
+  font-size: 2.5rem;
+}
+
+.details .two h5 {
+  font-size: 1.1rem;
+}
+
+.details .two p {
+  font-size: 1.1rem;
+  color: #666262;
+  margin-bottom: 0.8;
+}
+
+/*About Us*/
+.trainer {
+  background: #f9f9f9;
+  padding: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainer .about {
+  width: 39%;
+}
+
+.trainer .about h2 {
+  color: #212529;
+  font-size: 2.1rem;
+  padding-bottom: 1.8rem;
+}
+
+.trainer .about p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.trainer .people {
+  width: 57%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainer .people .team1,
+.trainer .people .team2 {
+  width: 45%;
+  height: auto;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+    100px 100px 80px rgba(0, 0, 0, 0.09);
+}
+
+.trainer .people .team1 .img img,
+.trainer .people .team2 .img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.trainer .people .team1 .name,
+.trainer .people .team1 .pro,
+.trainer .people .team2 .name,
+.trainer .people .team2 .pro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px 0 20px;
+}
+
+.trainer .people .team1,
+.teamDetails,
+.trainer .people .team2,
+.teamDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.trainer .people .team1 .name h4,
+.trainer .people .team2 .name h4 {
+  color: #212529;
+  font-size: 1.5rem;
+}
+
+.trainer .people .team1 .name i,
+.trainer .people .team1 .pro i,
+.trainer .people .team2 .name i,
+.trainer .people .team2 .pro i {
+  color: #212529;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.trainer .people .team1 .name p,
+.trainer .people .team2 .name p {
+  color: #212529;
+}
+
+/* Classes */
+.class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 8rem;
+}
+
+.class .paragraph {
+  font-size: 1.3rem;
+  color: #95a5a6;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+.class .h2 {
+  font-size: 2.2rem;
+  color: #222;
+  font-weight: 700;
+  padding-bottom: 50px;
+
+  text-align: center;
+}
+
+.class .classManu .people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.class .classManu .team1 {
+  width: 32%;
+  height: auto;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+    100px 100px 80px rgba(0, 0, 0, 0.09);
+}
+
+.class .classManu .team1 .img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.class .classManu .team1 .teamDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.class .classManu .team1 .teamDetails .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px 0 30px;
+}
+
+.class .classManu .team1 .teamDetails .name .nameDetails h4 {
+  color: #212529;
+  font-size: 1.7rem;
+}
+
+.class .classManu .team1 .teamDetails .name .nameDetails p {
+  font-size: 1.1rem;
+  color: #212529;
+}
+
+.class .classManu .team1 .teamDetails .name .nameDetails p span {
+  font-weight: 700;
+}
+
+.class .classManu .team1 .teamDetails .name .num h5 {
+  font-size: 1rem;
+  background-color: #f13a11;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.class .classManu .team1 .pro {
+  padding: 15px 30px 30px 30px;
+}
+.class .classManu .team1 .pro p {
+  font-size: 1.1rem;
+  color: #666262;
+}
+
+/*Contact Us*/
+.contact {
+  padding: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: flex-start;
+}
+
+.contact .form {
+  width: 45%;
+}
+
+.contact .form h2 {
+  font-size: 2rem;
+  color: #212529;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.contact .form .submit {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contact .form .submit input,
+.contact .form .submit textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #95a5a6;
+  outline: none;
+  margin: 13px 0;
+}
+
+.contact .form .submit input:focus,
+.contact .form .submit textarea:focus {
+  border: 1px solid #111;
+}
+
+.contact .form .submit input::placeholder {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.contact .form .submit textarea::placeholder {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  height: 80%;
+}
+
+.contact .form .submit a {
+  width: 100%;
+  padding: 15px 0;
+  text-decoration: none;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 13px 0;
+}
+.contact .map {
+  width: 45%;
+}
+
+.contact .map h2 {
+  font-size: 2rem;
+  color: #212529;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.contact .map p {
+  font-size: 1.1rem;
+  color: #212529;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.contact .map p i {
+  color: red;
+  padding-right: 4px;
+}
+.contact .map iframe {
+  width: 100%;
+}
+
+/* Footer*/
+
+.footer {
+  border-top: 1px solid #ecf0f1;
+  padding: 5rem 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  color: #7f8c8d;
+  justify-content: flex-start;
+}
+
+.footer p i {
+  color: red;
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 1042px) {
+  /* Nav bar*/
+  .nav {
+    padding: 1rem 4.5rem;
+  }
+
+  .nav h2 {
+    font-size: 1.4rem;
+  }
+
+  .nav #item li {
+    padding-right: 30px;
+  }
+
+  .nav #item li a {
+    font-size: 0.9rem;
+  }
+
+  .nav #item .icon i {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* Nav bar*/
+  .nav {
+    padding: 1rem 3rem;
+  }
+
+  .nav h2 {
+    font-size: 1.6rem;
+  }
+
+  #item {
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    margin-top: 4.2rem;
+    transition: 0.5s;
+  }
+
+  .nav #item li {
+    padding: 4px 0;
+  }
+
+  .nav #item li a {
+    font-size: 1.2rem;
+  }
+
+  .nav #item .icon {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav #item .icon i {
+    padding: 0 15px;
+  }
+
+  #bar {
+    display: initial;
+    cursor: pointer;
+  }
+
+  /* first Section*/
+  .mid p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .mid h2 {
+    font-size: 2.5rem;
+  }
+
+  .mid .btn {
+    margin-top: 1.5rem;
+  }
+
+  .mid .btn a {
+    font-size: 0.9rem;
+  }
+
+  .mid .btn a.simple {
+    padding: 0.7rem 1.4rem;
+  }
+
+  .mid .btn a.border {
+    padding: 0.7rem 1.4rem;
+  }
+
+  /*Section 2*/
+  .details {
+    padding: 6rem 7rem;
+  }
+
+  .details .one {
+    width: 50%;
+  }
+
+  .details .one h3 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .details .one p {
+    font-size: 1.1rem;
+    padding-bottom: 2.2rem;
+  }
+
+  .details .one a {
+    font-size: 0.9rem;
+  }
+
+  .details .two {
+    padding-left: 3.5rem;
+  }
+
+  .details .two h3 {
+    font-size: 2rem;
+  }
+
+  .details .two h5 {
+    font-size: 1rem;
+  }
+
+  .details .two p {
+    font-size: 1rem;
+    margin-bottom: 0.6;
+  }
+  /*About Us*/
+  .trainer {
+    padding: 6rem 7rem;
+  }
+
+  .trainer .about h2 {
+    font-size: 2rem;
+    padding-bottom: 1.4rem;
+  }
+
+  .trainer .about p {
+    font-size: 1rem;
+  }
+
+  .trainer .people .team1,
+  .trainer .people .team2 {
+    width: 48%;
+  }
+
+  .trainer .people .team1 .name,
+  .trainer .people .team1 .pro,
+  .trainer .people .team2 .name,
+  .trainer .people .team2 .pro {
+    padding: 5px 15px 0 15px;
+  }
+
+  .trainer .people .team1 .name h4,
+  .trainer .people .team2 .name h4 {
+    font-size: 1.1rem;
+  }
+
+  /* Classes */
+  .class {
+    padding: 6rem;
+  }
+
+  .class .paragraph {
+    font-size: 1.1rem;
+    padding-bottom: 4px;
+  }
+
+  .class .h2 {
+    font-size: 2rem;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .class .classManu .team1 .teamDetails {
+    padding-bottom: 7px;
+  }
+
+  .class .classManu .team1 .teamDetails .name {
+    padding: 5px 15px 0 15px;
+  }
+
+  .class .classManu .team1 .teamDetails .name .nameDetails h4 {
+    font-size: 1.2rem;
+  }
+
+  .class .classManu .team1 .teamDetails .name .nameDetails p {
+    font-size: 1rem;
+  }
+
+  .class .classManu .team1 .teamDetails .name .num h5 {
+    font-size: 0.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
+  }
+
+  .class .classManu .team1 .pro {
+    padding: 15px 15px 30px 15px;
+  }
+  .class .classManu .team1 .pro p {
+    font-size: 1rem;
+  }
+
+  /*Contact Us*/
+  .contact {
+    padding: 6rem;
+  }
+
+  .contact .form h2 {
+    padding-bottom: 7px;
+  }
+
+  .contact .form .submit input,
+  .contact .form .submit textarea {
+    padding: 12px;
+    margin: 10px 0;
+  }
+
+  .contact .form .submit input::placeholder {
+    font-size: 1rem;
+  }
+
+  .contact .form .submit textarea::placeholder {
+    font-size: 1.0rem;
+  }
+
+  .contact .form .submit a {
+    padding: 15px 0;
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .contact .map h2 {
+    padding-bottom: 7px;
+  }
+
+  .contact .map p {
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+
+  /* Footer*/
+
+  .footer {
+    padding: 6rem;
+  }
+
+  .footer p {
+    color: #7f8c8d;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    /* Nav bar*/
+    .nav h2 {
+      font-size: 1.5rem;
+    }
+  
+    /* first Section*/
+
+    .back{
+      background-position: center;
+    }
+    .mid p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .mid h2 {
+      font-size: 2.1rem;
+    }
+  
+    .mid .btn {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center;
+    }
+  
+    .mid .btn a.simple {
+      margin-bottom: 7px;
+    }
+
+    /*Section 2*/
+    .details {
+      padding: 5rem 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .details .one {
+      width: 70%;
+    }
+  
+    .details .one a {
+      font-size: 1rem;
+    }
+  
+    .details .two {
+      padding-left: 0;
+      border-left: 0;
+      border-top: 1px solid #666262;
+      width: 70%;
+      margin-top: 1.7rem;
+      padding-top: 1.7rem;
+    }
+  
+    .details .two h3 {
+      font-size: 2rem;
+    }
+
+    /*About Us*/
+    .trainer {
+      padding: 5rem 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .trainer .about{
+      width: 70%;
+      margin-bottom: 1.7rem;
+    }
+    .trainer .people {
+      width: 70%;
+    }
+    
+    /* Classes */
+
+    .class .classManu .people {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .class .classManu .team1 {
+      width: 65%;
+      margin-bottom: 20px;
+    }
+
+    /*Contact Us*/
+    .contact {
+      padding: 5rem 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .contact .form{
+      width: 70%;
+      margin-bottom: 1.5rem;
+    }
+    .contact .form h2 {
+      padding-bottom: 2.5px;
+    }
+
+    .contact .map{
+      width: 60%;
+    } 
+  
+    /* Footer*/
+  
+    .footer {
+      padding: 5rem 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+}
+
+
+@media screen and (max-width: 496px) {
+
+    /* first Section*/
+    .mid p {
+      margin-bottom: 0.8rem;
+    }
+  
+    .mid h2 {
+      font-size: 1.8rem;
+    }
+  
+    .mid .btn {
+      margin-top: 0.7rem;
+    }
+
+    /*Section 2*/
+    .details {
+      padding: 4rem 1rem;
+    }
+  
+    .details .one {
+      width: 100%;
+    }
+  
+    .details .two {
+      width: 100%;
+    }
+  
+    /*About Us*/
+    .trainer {
+      padding: 4rem 1rem;
+   }
+    .trainer .about{
+      width: 100%;
+    }
+    .trainer .people {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .trainer .people .team1, .trainer .people .team2{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    /* Classes */
+
+    .class{
+      padding: 4rem 1rem;
+    }
+
+    .class .classManu .team1 {
+      width: 100%;
+    }
+
+    /*Contact Us*/
+    .contact {
+      padding: 4rem 1rem;
+     }
+
+    .contact .form{
+      width: 100%;
+    }
+
+    .contact .map{
+      width: 100%;
+    } 
+  
+    /* Footer*/
+  
+    .footer {
+      padding: 4rem 1rem;
+    }
+}
